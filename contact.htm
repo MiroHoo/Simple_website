@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="contactstyle.css">
+  <link rel="stylesheet" href="webstyle.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=0.9">
+<body onload="init();">
+  <Header class="Header">
+    <a href="https://github.com/MiroHoo?tab=repositories" target="_blank" class="Name">Monkey Jones</a>
+    <b>Software developer || It enjoyer </b>
+    <nav class="Header-Buttons">
+      <a href="./index.htm">Home</a>
+      <a href="./contact.htm">Contact</a>
+    </nav>
+  </Header>
+  &nbsp
+  <section class="FlexBoxes">
+  <h class="flex-container-Contact-header">
+    <div>Leave me a message!</div>
+  </h>
+  <section class="flex-container-Contact"> 
+    <article>
+      <article class="container">
+        <form id="form">
+          <label for="firstname">First Name</label><a style="color:red;" class="mandatory">*<span class="mandatorytext">this field is mandatory</span></a>
+          <input type="text" id="firstname" name="fname" placeholder="Your name.." >
+          <label for="lastname" >Last Name</label>
+          <input type="text" id="lastname" name="lname" placeholder="Your last name..">
+          <label for="emailadress">Email</label><a style="color:red;" class="mandatory">*<span class="mandatorytext">this field is mandatory</span></a>
+          <input type="text" id="emailadress" name="email" placeholder="Your emailadress..">
+          <label for="subject">Subject</label><a style="color:red;" class="mandatory">*<span class="mandatorytext">this field is mandatory</span></a>
+          <textarea id="subject" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+          <div><input type="submit" value="Submit" id="submitbutton"> <a class="warning" id="warning">text</a></div>
+        </form>
+      </article>  
+      <script src="ContactJS.js"></script>
+    </article>
+  </section>
+</section>
+  &nbsp   
+<section class="flex-container-Contact2">
+  <h id="other" class="intrestedheader">
+  Other Sites I Frequent
+  </h>
+  <article class="media">
+    <div class="column">
+  <pimage class="icons"><a href="https://www.linkedin.com/in/miro-hannikainen-469316262/"  target="_blank"> <img src="./resources/images/linkedin.webp" alt="Linkedin" style="width:60%"/></a></pimage>
+  </div>
+  <div class="column">
+  <pimageclass="icons"><a href="https://github.com/MiroHoo?tab=repositories" target="_blank"><img src="./resources/images/github.webp" alt="GitHub" style="width:60%"/></a></pimage>
+  </div>
+  </article>  
+  &nbsp
+  <h id="detailhead" class="intrestedheader">
+  Some of my details
+  </h>
+  <article class="infoDiv">
+  <br><br>
+  <hinfo>Email: ILuvBananas@Jungle.ru</hinfo>
+  <br><br>
+  <hinfo>Phone: (555)BAN-ANAS</hinfo>
+  <br><br>
+  <hinfo>PObox: P.O. Box 1234 Banana Grove Lane</hinfo>
+  <br><br>
+  <hinfo><a href="./resources/images/Monkey-Selfie.jpg"  target="_blank" download="My_Cv">My Cv</a></hinfo>
+</article>
+</section>
+  <footer class="FullFooter">
+    &nbsp
+<section class="MainFooter">
+    &nbsp
+    Website Resources
+    <nav class ="BottomTexts">    
+    <a href="./index.htm">Home</a><pivader>||</pivader><a href="./contact.htm">Contact</a><pivader>
+    </nav>
+    <figure class="buttoncon"><button class="FunButton" onclick="Images()">Press me for an image!</button>
+    <figcaption class="tooltip">Funny Dog</figcaption></figure>
+    <img id="dog" class="dogImage"></img> 
+</section>
+</footer>
+</body>
+</html>

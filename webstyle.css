@@ -1,0 +1,566 @@
+body {
+  background: rgb(220, 218, 255);
+  background: linear-gradient(90deg, rgba(220, 218, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 59%, rgba(220, 218, 255, 1) 100%);
+}
+
+.Header {
+  overflow: hidden;
+  background-color: #B6E1E7;
+  padding: 20px 10px;
+  width: 100%;
+  align-items: center;
+}
+.MonkeyImg:hover{
+  opacity: 0.3;
+}
+
+.Header a {
+  align-items: center;
+  float: left;
+  color: rgb(54, 54, 218, 0.833);
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.Header b {
+  float: left;
+  line-height: 3px;
+  color: rgb(54, 54, 218, 0.833);
+  text-align: left;
+  padding: 13px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+.Header a.Name {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.Header a:hover {
+  background-color: #da3f3f;
+  color: black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.Skills {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px),
+(max-width:480px),
+(max-width:801px),
+(max-width:1525px) {
+  .DividerRight {
+    visibility: hidden;
+  }
+  .Header{
+    align-items: center;
+    width: 95%;
+  }
+  .Header a {
+  width: 100%;
+  text-align: center;
+  }
+  .Header b {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  }
+  .Header-Buttons {
+    width: 100%;
+    text-align: center;
+  }
+  .DividerRight {
+    width: 100%
+  }
+
+  .Header-Buttons {
+    float: left;
+  }
+
+  .grid-container {
+    width: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container1 {
+    flex-direction: column;
+  }
+
+  .HeaderName,
+  .HeaderAboutMe,
+  .ImageLeft,
+  .ParagraphRight {
+    flex: 1 100%;
+    flex-basis: 100%;
+  }
+
+  .InteractiveGalpic {
+    width: auto;
+    height: auto;
+  }
+
+  .HeaderName {
+    order: 1;
+  }
+
+  .ImageLeft {
+    order: 2;
+  }
+
+  .MonkeyImg {
+    width: 20%;
+  }
+
+  .HeaderAboutMe {
+    order: 3;
+  }
+
+  .ParagraphRight {
+    order: 4;
+  }
+
+  #WH1 {
+    order: 1;
+  }
+
+  #WH2 {
+    order: 3;
+  }
+
+  #WH3 {
+    order: 5;
+  }
+
+  #WP1 {
+    order: 2;
+  }
+
+  #WP2 {
+    order: 4;
+  }
+
+  #WP3 {
+    order: 6;
+  }
+  .IntrestedHead{
+    order: 7;
+  }
+  .IntrestedP{
+    order: 8;
+  }
+
+  #gallery{
+    width:300px;
+    height:200px
+  }
+
+  .ImageContainer {
+   order:1;
+   align-items: center;
+
+   flex-basis:100%;
+   flex-grow: 1;
+  }
+
+  .Info {
+    order:2;
+    flex-basis: 100%;
+  }
+
+  .Interaction {
+    grid-row: 7;
+    grid-column: 1/9;
+  }
+}
+
+.Header-Buttons {
+  float: right;
+}
+
+.Skills th,
+.Skills td {
+  padding: 12px 15px;
+}
+
+.Skills tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table,
+td,
+th {
+  grid-column: 3/9;
+  grid-row: 3;
+  border: 2px solid rgba(0, 0, 0, 0.433);
+  border-collapse: collapse;
+  background-color: #B6E1E7;
+  font-size: calc(15px + .4vw);
+  width: auto;
+  color: rgba(54, 54, 218, 0.833);
+  font-family: Sans-serif;
+  text-align: left;
+}
+
+.MainFooter {
+  color: rgba(54, 54, 218, 0.833);
+  font-size: 30px;
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  border-style: groove;
+  float: center;
+  margin: 20px 0px;
+  padding: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.WorkH:hover {
+  background-color: rgba(255, 255, 255, 0.633);
+}
+.flex-container2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.BottomTexts {
+  font-size: 20px;
+  margin: 20px 0px;
+  padding: 40px;
+  text-align: center;
+}
+
+.Header {
+  grid-area: header;
+}
+
+.ParagraphRight {
+  grid-area: right;
+}
+
+.ImageLeft {
+  grid-area: img;
+}
+
+.SkillsHeader {
+  grid-column: 1 / 9;
+  grid-row: 1;
+}
+
+.SkillsTableP {
+  grid-area: table;
+}
+
+.DividerRight {
+  grid-area: divider;
+  font-size: 40px;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  height: auto;
+  width: auto;
+  float: right;
+}
+
+.ParagraphLeft {
+  grid-column: 1 / 9;
+  grid-row: 2;
+}
+
+.workH,
+.WorkH{
+  color: rgba(54, 54, 218, 0.833);
+  font-size: 40px;
+  background-color: rgba(182, 225, 231, 0.6);
+  font-weight: bold;
+  margin: 1px;
+  margin-bottom: 30px;
+}
+
+.workH {
+  order:4;
+  flex-grow: 1;
+  text-align: center;
+  grid-gap: 50px;
+}
+
+.WorkH {
+  border: groove;
+  text-align: center;
+  flex-basis: 31.90%;
+  gap: 10px;
+  flex-grow: 0.9;
+}
+.IntrestedHead{
+  border: groove;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgba(54, 54, 218, 0.833);
+  font-size: 40px;
+  background-color: rgba(182, 225, 231, 0.6);
+  flex-basis: 100%;
+}
+.IntrestedP{
+  font-size: 40px;
+  flex-basis:100%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(54, 54, 218, 0.833);
+  font-weight: bold;
+}
+.ImageContainer {
+  order:1;
+  margin: 10px;
+  padding: 5px;
+  flex-basis: 31%;
+  background-color: rgba(138, 138, 240, 0.133);
+}
+
+.InteractiveGalpic {
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.InteractiveGal{
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.ProjectH {
+  grid-column: 1 / 9;
+  grid-row: 4;
+  color: rgba(54, 54, 218, 0.833);
+  font-size: 40px;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  border-style: groove;
+  font-weight: bold;
+  width: 100%;
+  margin: 1px;
+}
+
+.Info {
+  order:1;
+  flex-basis: 63%;
+  flex-grow: 1;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(138, 138, 240, 0.133);
+  border-style: groove;
+  margin: 10px;
+  padding: 5px;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.HeaderName {
+  flex-grow: 1;
+  border-style: groove;
+  flex-basis: 10%;
+  color: rgba(54, 54, 218, 0.833);
+  background: rgb(182, 225, 231);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+}
+
+.HeaderAboutMe {
+  flex-grow: 1;
+  border-style: groove;
+  flex-basis: 79%;
+  color: rgba(54, 54, 218, 0.833);
+  background: rgb(182, 225, 231);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+}
+
+.ImageLeft {
+  flex-grow: 1;
+  flex-basis: 10%;
+}
+
+.MonkeyImg {
+  display: block;
+  height: 400px;
+  max-width: 90%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.ParagraphRight {
+  border-style: groove;
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+  flex-grow: 1;
+  flex-basis: 78.5%;
+  font-size: 25px;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+}
+
+.work {
+  flex-basis: 33.333%;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto-fill;
+  gap: 10px;
+  padding: 5px, 0px;
+}
+
+.SkillsHeader {
+  color: rgba(54, 54, 218, 0.833);
+  font-size: 40px;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  border-style: groove;
+  font-weight: bold;
+  text-align: left;
+}
+
+.SkillsTableP {
+  grid-column: 1 / 9;
+  grid-row: 3;
+  background-color: rgba(138, 138, 240, 0.133);
+}
+
+.ParagraphLeft {
+  font-size: 25px;
+  float: right;
+  min-width: 40%;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 0px;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  border-style: groove;
+  margin: 10px;
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(167, 206, 211, 0.5);
+}
+
+.flex-container>article {
+  background-color: #f1f1f1;
+  border-style: groove;
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+  flex: 1;
+}
+
+.Interaction {
+  order: 3;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.prev {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+.next {
+  float: right;
+  text-align: center;
+  width: 20%;
+}
+
+.next,
+.prev {
+  padding: 14px 28px;
+  cursor: pointer;
+  font-size: 15px;
+  display: block;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+}
+
+.prev {
+  background: rgb(51, 230, 255);
+  background: linear-gradient(90deg, rgba(51, 230, 255, 0.1578433388157895) 33%, rgba(182, 225, 231, 1) 51%);
+}
+
+.next:hover,
+.prev:hover {
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  display: block;
+  background-color: rgba(138, 138, 240, 0.633);
+  color: rgba(54, 54, 218, 0.833);
+}
+.imgPrev,
+.imgNext {
+  padding: 10px 8px;
+  display: block;
+  background: rgb(182, 225, 231);
+  background: linear-gradient(90deg, rgba(182, 225, 231, 1) 33%, rgba(51, 230, 255, 0.1578433388157895) 51%);
+  text-align: center;
+}
+.imgPrev,
+.imgNext {
+  width: 20%;
+}
+
+.imgNext {
+  float: right;
+}
+
+.imgPrev {
+  float: left;
+  background: rgb(51, 230, 255);
+  background: linear-gradient(90deg, rgba(51, 230, 255, 0.1578433388157895) 33%, rgba(182, 225, 231, 1) 51%);
+}
+.imgPrev:hover,
+.imgNext:hover {
+  padding: 10px 8px;
+  display: block;
+  background-color: rgba(138, 138, 240, 0.633);
+  cursor: pointer;
+}
+
+.AmountImg {
+  text-align: center;
+  font-weight: bold;
+  font-size: auto;
+  color: rgba(54, 54, 218, 0.833);
+}
